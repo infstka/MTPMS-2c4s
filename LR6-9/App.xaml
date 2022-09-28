@@ -1,0 +1,19 @@
+﻿<Application x:Class="ЛР6_9.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ЛР6_9"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="Dictionaries/Ru.xaml" />
+                <ResourceDictionary
+                    Source="Styles/Style_Red_Gray.xaml" />
+                <ResourceDictionary
+                    Source="D:\уник\ООП\ЛР6-9\Resources\StaticDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

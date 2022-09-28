@@ -1,0 +1,16 @@
+﻿<Window x:Class="ЛР6_9.ForUC"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЛР6_9"
+        xmlns:control = "clr-namespace:ЛР6_9" 
+        mc:Ignorable="d"
+        Title="ForUC" Height="437.092" Width="787.299"
+        Background="Wheat">
+    <Grid>
+        <control:MyUserControl/>
+        <control:SecondUserControl Margin="439,10,-237,-30"></control:SecondUserControl>
+        <control:FirstUserControl Margin="48,146,431,10"></control:FirstUserControl>
+    </Grid>
+</Window>

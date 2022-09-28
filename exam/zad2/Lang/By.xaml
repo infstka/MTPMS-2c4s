@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:задача2" xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="Ru">Руская</v:String>
+    <v:String x:Key="By">Беларуская</v:String>
+    <v:String x:Key="Lab1">Першае поле</v:String>
+    <v:String x:Key="Lab2">Другое поле</v:String>
+    <v:String x:Key="Ent">Увядзiце дадзеные</v:String>
+    <v:String x:Key="Button">Вывесцi</v:String>
+    <v:String x:Key="Language">Мова</v:String>
+
+</ResourceDictionary>

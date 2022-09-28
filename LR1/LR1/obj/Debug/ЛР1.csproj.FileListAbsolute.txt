@@ -1,0 +1,20 @@
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\bin\Debug\ЛР1.exe.config
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\bin\Debug\ЛР1.exe
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\bin\Debug\ЛР1.pdb
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.AssemblyReference.cache
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.Form1.resources
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.Properties.Resources.resources
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.GenerateResource.cache
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.CoreCompileInputs.cache
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.exe
+F:\Лабораторные работы\2 курс\2 семестр\ООП\ЛР1\ЛР1\obj\Debug\ЛР1.pdb
+C:\Users\User\Desktop\ЛР1\ЛР1\bin\Debug\ЛР1.exe.config
+C:\Users\User\Desktop\ЛР1\ЛР1\bin\Debug\ЛР1.exe
+C:\Users\User\Desktop\ЛР1\ЛР1\bin\Debug\ЛР1.pdb
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.Form1.resources
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.Properties.Resources.resources
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.exe
+C:\Users\User\Desktop\ЛР1\ЛР1\obj\Debug\ЛР1.pdb

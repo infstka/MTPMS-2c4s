@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ЛР6_9" xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <!--Меню-->
+    <v:String x:Key="MenuAddBass">Дадаць</v:String>
+    <v:String x:Key="MenuSort">Сартаванне</v:String>
+    <v:String x:Key="MenuSortByPrice">Сартаваць па кошце</v:String>
+    <v:String x:Key="MenuSortByCount">Сартаваць па колькасці</v:String>
+    <v:String x:Key="MenuSave">Захаваць</v:String>
+    <v:String x:Key="MenuLoad">Загрузіць</v:String>
+    <v:String x:Key="MenuSearch">Пошук</v:String>
+    <v:String x:Key="SwitchLanguage">Змяніць мову</v:String>
+    <v:String x:Key="RuLanguage">Руская</v:String>
+    <v:String x:Key="EnLanguage">Aнглійская</v:String>
+    <v:String x:Key="ByLanguage">Беларуская</v:String>
+    <v:String x:Key="Select">Выбарка</v:String>
+    <v:String x:Key="SelectByPrice">Выбраць па кошце</v:String>
+    <v:String x:Key="SelectByType">Выбраць па тыпу</v:String>
+
+    <!--Разное-->
+    <v:String x:Key="MainMore">Падрабязней</v:String>
+    <v:String x:Key="MainDel">Выдаліць</v:String>
+    <v:String x:Key="MainEdit">Рэдагаваць</v:String>
+    <v:String x:Key="LowPrice">Пачатковы кошт</v:String>
+    <v:String x:Key="HighPrice">Канчатковы кошт</v:String>
+
+    <!--Подробнее-->
+    <v:String x:Key="BD_Buy">Купіць</v:String>
+    <v:String x:Key="BD_Price">Кошт</v:String>
+    <v:String x:Key="BD_Count">Колькасць:</v:String>
+    <v:String x:Key="BD_Rate">Рэйтынг:</v:String>
+
+    <!--Добавить-->
+    <v:String x:Key="CB_Name">Назва</v:String>
+    <v:String x:Key="CB_Manufacturer">Вытворца</v:String>
+    <v:String x:Key="CB_Price">Кошт</v:String>
+    <v:String x:Key="CB_Count">Колькасць</v:String>
+    <v:String x:Key="CB_Descr">Апісанне</v:String>
+    <v:String x:Key="CB_Add">Дадаць</v:String>
+    <v:String x:Key="CB_AddImage">Дадаць малюнак</v:String>
+    <v:String x:Key="CB_Type">Тып</v:String>
+    <v:String x:Key="CB_Rate">Рэйтынг</v:String>
+    <v:String x:Key="CB_Sale">Зніжка</v:String>
+    <v:String x:Key="CB_FourString">4-струнны</v:String>
+    <v:String x:Key="CB_TypeFiveString">5-струнны</v:String>
+    <v:String x:Key="CB_SixString">6-струнны</v:String>
+
+    <!--Изменить-->
+    <v:String x:Key="EB_Name">Назва</v:String>
+    <v:String x:Key="EB_Manufacturer">Вытворца</v:String>
+    <v:String x:Key="EB_Price">Кошт</v:String>
+    <v:String x:Key="EB_Count">Колькасць</v:String>
+    <v:String x:Key="EB_Descr">Апісанне</v:String>
+    <v:String x:Key="EB_Change">Изменить</v:String>
+    <v:String x:Key="EB_ChangeImage">Змяніць малюнак</v:String>
+
+    <!--Поиск-->
+    <v:String x:Key="SearchName">Увядзіце назву</v:String>
+    <v:String x:Key="SearchButton">Пошук</v:String>
+</ResourceDictionary>

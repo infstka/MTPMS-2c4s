@@ -1,0 +1,15 @@
+D:\уник\задача3\bin\Debug\задача3.exe.config
+D:\уник\задача3\bin\Debug\задача3.exe
+D:\уник\задача3\bin\Debug\задача3.pdb
+D:\уник\задача3\obj\Debug\задача3.csproj.AssemblyReference.cache
+D:\уник\задача3\obj\Debug\MainWindow.g.cs
+D:\уник\задача3\obj\Debug\App.g.cs
+D:\уник\задача3\obj\Debug\задача3_MarkupCompile.cache
+D:\уник\задача3\obj\Debug\задача3_MarkupCompile.lref
+D:\уник\задача3\obj\Debug\MainWindow.baml
+D:\уник\задача3\obj\Debug\задача3.g.resources
+D:\уник\задача3\obj\Debug\задача3.Properties.Resources.resources
+D:\уник\задача3\obj\Debug\задача3.csproj.GenerateResource.cache
+D:\уник\задача3\obj\Debug\задача3.csproj.CoreCompileInputs.cache
+D:\уник\задача3\obj\Debug\задача3.exe
+D:\уник\задача3\obj\Debug\задача3.pdb

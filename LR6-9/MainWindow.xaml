@@ -1,0 +1,144 @@
+﻿<Window x:Class="ЛР6_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЛР6_9"
+        mc:Ignorable="d"
+        Title="Bass Guitar Shop" Height="900" Width="1600" Cursor="" Icon="BGIcon.png">
+    <Window.Resources>
+        <Style x:Key="ListBoxing" TargetType="ListBox">
+            <Style.Setters>
+                <Setter Property="Background" Value="Red"></Setter>
+            </Style.Setters>
+            <Style.Triggers>
+          <!---->
+                    <DataTrigger Binding="{Binding ElementName=BassesList, Path=Items.Count}" Value="0">
+                    <Setter Property="Background" Value="LightGray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=BassesList, Path=Items.Count}" Value="1">
+                    <Setter Property="Background" Value="Orange"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=BassesList, Path=Items.Count}" Value="2">
+                    <Setter Property="Background" Value="Yellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="local:WindowCommands.Exit" Executed="Exit_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+
+        <Viewbox>
+
+
+            <Menu Width="1600" RenderTransformOrigin="0.495,-1.35" Margin="0,0,-8,836" Height="30" Style="{DynamicResource ChangeMenu}">
+                <MenuItem x:Name="MenuAddBass" Header="{DynamicResource MenuAddBass}" Background="Red" Command="{Binding AddBass}"></MenuItem>
+                <MenuItem x:Name="MenuSort" Header="{DynamicResource MenuSort}">
+                    <MenuItem x:Name="MenuSortByPrice" Header="{DynamicResource MenuSortByPrice}" Command="{Binding SortByPrice}"></MenuItem>
+                    <MenuItem x:Name="MenuSortByCount" Header="{DynamicResource MenuSortByCount}" Command="{Binding SortByCount}"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="MenuSave" Header="{DynamicResource MenuSave}" Command="{Binding SaveInXML}"></MenuItem>
+                <MenuItem x:Name="MenuLoad" Header="{DynamicResource MenuLoad}" Command="{Binding LoadFromXML}"></MenuItem>
+                <MenuItem x:Name="MenuSearch" Header="{DynamicResource MenuSearch}" Command="{Binding Search}"></MenuItem>
+                <MenuItem x:Name="LanguageSwitch" Header="{DynamicResource SwitchLanguage}">
+                    <MenuItem x:Name="RuLanguage" Header="{DynamicResource RuLanguage}" Command="{Binding ChangeLanguageToRu}"></MenuItem>
+                    <MenuItem x:Name="EnLanguage" Header="{DynamicResource EnLanguage}" Command="{Binding ChangeLanguageToEn}"></MenuItem>
+                    <MenuItem x:Name="ByLanguage" Header="{DynamicResource ByLanguage}" Command="{Binding ChangeLanguageToBy}"></MenuItem>
+
+                </MenuItem>
+                <MenuItem x:Name="Choose" Header="{DynamicResource Select}">
+                    <MenuItem x:Name="SPrice" Header="{DynamicResource SelectByPrice}" Command="{Binding ChooseByPrice}" ></MenuItem>
+                    <MenuItem x:Name="SType" Header="{DynamicResource SelectByType}" Command="{Binding ChooseByType}"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="Style" Header="Стиль">
+                    <MenuItem x:Name="style1" Header="1" Command="{Binding SetStyle1}"></MenuItem>
+                    <MenuItem x:Name="style2" Header="2" Command="{Binding SetStyle2}"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="UsCont" Header="User Control" Command="{Binding OpenUserControl}"></MenuItem>
+
+                <Button Content="Undo" x:Name="UndoButton" Command="{Binding UndoFunc}"></Button>
+                <Button Content="Redo" x:Name="RedoButton" Command="{Binding RedoFunc}"></Button>
+
+                <MenuItem x:Name="REOpen" Header="RoutedEventsOpen" Click="ReOpen"></MenuItem>
+            </Menu>
+        </Viewbox>
+        <Viewbox>
+            <ListBox x:Name="BassesList" Style="{StaticResource ListBoxing}" Margin="0,245,792,0" Width="800" Height="622">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Image x:Name="BassImage" Source="{Binding Path=ImagePath}" Width="100" Height="150"></Image>
+                            <StackPanel Orientation="Vertical">
+
+
+                                <TextBlock x:Name="test" FontSize="16" Text="{Binding Path=Name}"  />
+                                <TextBlock FontSize="16" Text="{Binding Path=Manufacturer}"  />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontSize="16" Text="{Binding Path=Price}" HorizontalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="$" HorizontalAlignment="Center" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontSize="16" Text="{DynamicResource BD_Count}" HorizontalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="{Binding Path=Count}" HorizontalAlignment="Center" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{DynamicResource MainMore}" Margin="0,0,20,0"></TextBlock>
+                                    <Button x:Name="BassDescription" Width="15" Content="{Binding Path=ID}" Click="BassDescription" BorderBrush="White" Background="White" Margin="0,0,20,0" Foreground="White" FontSize="0.01"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{DynamicResource MainDel}" Margin="0,0,20,0"></TextBlock>
+                                    <Button x:Name="BassDelete" Width="15" Content="{Binding Path=ID}" Click="BassDelete" BorderBrush="White" Background="White" Margin="0,0,20,0" Foreground="White" FontSize="0.01"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{DynamicResource MainEdit}" Margin="0,0,20,0"></TextBlock>
+                                    <Button x:Name="BassEdit" Width="15" Content="{Binding Path=ID}" Click="BassEdit" BorderBrush="White" Background="White" Margin="0,0,20,0" Foreground="White" FontSize="0.01"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Viewbox>
+        <Viewbox>
+            <TextBlock Style="{DynamicResource ChangeTextBlock}"  HorizontalAlignment="Center" Margin="687,-100,695,500" TextWrapping="Wrap" Text="Bass Guitar Shop" VerticalAlignment="Top" Height="104" Width="546" FontSize="72" Background="White" FontFamily="Times New Roman" />
+
+        </Viewbox>
+
+        <Viewbox>
+
+
+            <ListBox x:Name="BassesListChoosed" Style="{DynamicResource ChangeListBox}"   Margin="792,245,0,0" Width="792" Height="619">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Image x:Name="BassImage" Source="{Binding Path=ImagePath}" Width="100" Height="150"></Image>
+                            <StackPanel Orientation="Vertical">
+
+
+                                <TextBlock x:Name="test" FontSize="16" Text="{Binding Path=Name}"  />
+                                <TextBlock FontSize="16" Text="{Binding Path=Manufacturer}"  />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontSize="16" Text="{Binding Path=Price}" HorizontalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="$" HorizontalAlignment="Center" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontSize="16" Text="{DynamicResource BD_Count}" HorizontalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="{Binding Path=Count}" HorizontalAlignment="Center" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{DynamicResource MainMore}" Margin="0,0,20,0"></TextBlock>
+                                    <Button x:Name="BassDescription" Width="15" Content="{Binding Path=ID}" Click="BassDescription" BorderBrush="White" Background="White" Margin="0,0,20,0" Foreground="White" FontSize="0.01"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Viewbox>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="1492,38,0,0" VerticalAlignment="Top" Width="74" Command="local:WindowCommands.Exit"/>
+    </Grid>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="ЛР6_9.EditBass.EditBass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЛР6_9.EditBass"
+        mc:Ignorable="d"
+        Title="EditBass" Height="671.564" Width="298.864" Icon="BGIcon.png">
+    <Window.Resources>
+        <Style x:Key="Multi" TargetType="Button">
+            <Setter Property="Background" Value="White"></Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <!---->
+                        <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True"></Condition>
+                        <Condition Property="IsPressed" Value="True"></Condition>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="FontStyle" Value="Oblique"></Setter>
+                        <Setter Property="FontSize" Value="14"></Setter>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="19,21,0,0" TextWrapping="Wrap" Text="{DynamicResource EB_Name}" VerticalAlignment="Top"/>
+        <TextBox x:Name="EditBassName" HorizontalAlignment="Left" Height="23" Margin="19,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,76,0,0" TextWrapping="Wrap" Text="{DynamicResource EB_Manufacturer}" VerticalAlignment="Top"/>
+        <TextBox x:Name="EditBassManufacturer" HorizontalAlignment="Left" Height="23" Margin="19,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,142,0,0" TextWrapping="Wrap" Text="{DynamicResource EB_Price}" VerticalAlignment="Top"/>
+        <TextBox x:Name="EditBassPrice" HorizontalAlignment="Left" Height="23" Margin="19,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,207,0,0" TextWrapping="Wrap" Text="{DynamicResource EB_Count}" VerticalAlignment="Top"/>
+        <TextBox x:Name="EditBassCount" HorizontalAlignment="Left" Height="23" Margin="22,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,458,0,0" TextWrapping="Wrap" Text="{DynamicResource EB_Descr}" VerticalAlignment="Top"/>
+        <TextBox x:Name="EditBassDescr" HorizontalAlignment="Left" Height="89" Margin="22,479,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254"/>
+        <Button Content="{DynamicResource EB_Change}" HorizontalAlignment="Left" Margin="22,597,0,0" VerticalAlignment="Top" Width="75" Click="EditCurrentBass" RenderTransformOrigin="0.733,0.05"/>
+        <Button Style="{StaticResource Multi}" Content="{DynamicResource EB_ChangeImage}" HorizontalAlignment="Left" Margin="114,597,0,0" VerticalAlignment="Top" Width="162" Click="EditCurrentImage"/>
+       
+        <Image x:Name="EditBassImage" HorizontalAlignment="Left" Height="100" Margin="163,343,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,364,0,0" TextWrapping="Wrap" Text="{DynamicResource CB_Type}" VerticalAlignment="Top" RenderTransformOrigin="1.1,6.312"/>
+        <RadioButton x:Name="FourString" Content="{DynamicResource CB_FourString}" HorizontalAlignment="Left" Margin="22,388,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="TypeFiveString" Content="{DynamicResource CB_TypeFiveString}" HorizontalAlignment="Left" Margin="22,408,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="SixString" Content="{DynamicResource CB_SixString}" HorizontalAlignment="Left" Margin="22,428,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,256,0,0" TextWrapping="Wrap" Text="{DynamicResource CB_Rate}" VerticalAlignment="Top"/>
+        <ComboBox x:Name="EditBassRate" HorizontalAlignment="Left" Margin="22,277,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.108,1.364">
+            <TextBlock><Run Text="1"/></TextBlock>
+            <TextBlock><Run Text="2"/></TextBlock>
+            <TextBlock><Run Text="3"/></TextBlock>
+            <TextBlock><Run Text="4"/></TextBlock>
+            <TextBlock><Run Text="5"/></TextBlock>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="22,304,0,0" TextWrapping="Wrap" Text="{DynamicResource CB_Sale}" VerticalAlignment="Top"/>
+        <ComboBox x:Name="EditBassSale" HorizontalAlignment="Left" Margin="22,325,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.092,-0.273">
+            <TextBlock><Run Text="10%"/></TextBlock>
+            <TextBlock><Run Text="30%"/></TextBlock>
+            <TextBlock><Run Text="50%"/></TextBlock>
+            <TextBlock><Run Text="90%"/></TextBlock>
+        </ComboBox>
+    </Grid>
+</Window>

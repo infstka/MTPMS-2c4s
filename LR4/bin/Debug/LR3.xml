@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<UchebnyOtdel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Disciplines>
+    <Discipline>
+      <Name>А</Name>
+      <Semestr>1</Semestr>
+      <Course>1</Course>
+      <Specialization>ПОИТ</Specialization>
+      <NumberOfLectures>15</NumberOfLectures>
+      <NumberOfLabs>15</NumberOfLabs>
+      <TypeOfControl>Экзамен</TypeOfControl>
+      <Result>Название дисциплины: А Курс: 1 Семестр:  1 Специальность: ПОИТ Кол-во лекций: 15 Кол-во лабораторных: 15 Вид контроля: Экзамен ФИО лектора: АБВ Аудитория: 1 Кафедра: А</Result>
+      <Lector>
+        <Department>А</Department>
+        <FullName>АБВ</FullName>
+        <Audience>1</Audience>
+      </Lector>
+    </Discipline>
+    <Discipline>
+      <Name>Б</Name>
+      <Semestr>1</Semestr>
+      <Course>1</Course>
+      <Specialization>ИСиТ</Specialization>
+      <NumberOfLectures>20</NumberOfLectures>
+      <NumberOfLabs>20</NumberOfLabs>
+      <TypeOfControl>Зачет</TypeOfControl>
+      <Result>Название дисциплины: Б Курс: 1 Семестр:  1 Специальность: ИСиТ Кол-во лекций: 20 Кол-во лабораторных: 20 Вид контроля: Зачет ФИО лектора: ГДЕ Аудитория: 2 Кафедра: Б</Result>
+      <Lector>
+        <Department>Б</Department>
+        <FullName>ГДЕ</FullName>
+        <Audience>2</Audience>
+      </Lector>
+    </Discipline>
+    <Discipline>
+      <Name>В</Name>
+      <Semestr>2</Semestr>
+      <Course>1</Course>
+      <Specialization>ПОИБМС</Specialization>
+      <NumberOfLectures>10</NumberOfLectures>
+      <NumberOfLabs>10</NumberOfLabs>
+      <TypeOfControl>Зачет</TypeOfControl>
+      <Result>Название дисциплины: В Курс: 1 Семестр:  2 Специальность: ПОИБМС Кол-во лекций: 10 Кол-во лабораторных: 10 Вид контроля: Зачет ФИО лектора: ЖЗИ Аудитория: 3 Кафедра: В</Result>
+      <Lector>
+        <Department>В</Department>
+        <FullName>ЖЗИ</FullName>
+        <Audience>3</Audience>
+      </Lector>
+    </Discipline>
+    <Discipline>
+      <Name>Г</Name>
+      <Semestr>1</Semestr>
+      <Course>2</Course>
+      <Specialization>ДЭиВИ</Specialization>
+      <NumberOfLectures>5</NumberOfLectures>
+      <NumberOfLabs>5</NumberOfLabs>
+      <TypeOfControl>Экзамен</TypeOfControl>
+      <Result>Название дисциплины: Г Курс: 2 Семестр:  1 Специальность: ДЭиВИ Кол-во лекций: 5 Кол-во лабораторных: 5 Вид контроля: Экзамен ФИО лектора: ЙКЛ Аудитория: 4 Кафедра: Г</Result>
+      <Lector>
+        <Department>Г</Department>
+        <FullName>ЙКЛ</FullName>
+        <Audience>4</Audience>
+      </Lector>
+    </Discipline>
+  </Disciplines>
+  <Lectors />
+</UchebnyOtdel>
